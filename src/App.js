@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.scss';
-import soundFile1 from "./audio/clap.mp3";
-import soundFile2 from "./audio/cymbal8.mp3";
+import AudioFiles from "./AudioFiles";
+import KeyQ from './keyQ';
+import KeyW from './keyW';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.keyPress = this.keyPress.bind(this);
-    this.clickedd = this.clickedd.bind(this);
+    this.clickedq = this.clickedq.bind(this);
+    this.clickedw = this.clickedw.bind(this);
     this.state = {
       keys: ["Q","W","E","A","S","D"],
       sounds: []
@@ -22,13 +24,21 @@ class App extends Component {
       audio1.play();
     }
   };
-  clickedd(){
+  clickedq(){
+    let audio1 = document.getElementById("keyq");
+    audio1.play();
+  }
+  clickedw(){
     let audio1 = document.getElementById("keyw");
-    document.addEventListener("click", ()=>{
-      if(document.querySelector("#W")){
-        audio1.play();
-      }
-    });
+    audio1.play();
+  }
+  clickede(){
+    let audio1 = document.getElementById("keye");
+    audio1.play();
+  }
+  clickeda(){
+    let audio1 = document.getElementById("keya");
+    audio1.play();
   }
 
   render() {
@@ -36,16 +46,8 @@ class App extends Component {
     return (
       <div id="drum-machine" onKeyPress={this.keyPress}>
         <div id="drums">
-          <audio id="keyq">
-            <source src={soundFile1} type="audio/mpeg" ></source>
-            <source src={soundFile1} type="audio/wav" ></source>
-          </audio>
-          <audio id="keyw">
-            <source src={soundFile2} type="audio/mpeg" ></source>
-            <source src={soundFile2} type="audio/wav" ></source>
-          </audio>
-          <button className="drum-pad" id="Q">Q</button>
-          <button className="drum-pad" id="W" onClick={this.clickedd}>W</button>
+        <KeyQ  clickedq={this.clickedq} />
+        <KeyW  clickedw={this.clickedw} />
           <button className="drum-pad" id="E">E</button>
           <button className="drum-pad" id="A">A</button>
           <button className="drum-pad" id="S">S</button>
