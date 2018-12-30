@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.scss';
 import AudioFiles from "./AudioFiles";
+import $ from "jquery";
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      keys: ["Q",]
-    }
-  }
+
   keyPress(event) {
+    let upCase = event.key.toUpperCase()
+    let getId = document.getElementById(upCase);
+    $(getId).css("background-active", "blue");
+
     if (event.key === "q" || event.key === "Q") {
       return document.getElementById("keyq").play()
     } else if (event.key === "w" || event.key === "W") {
