@@ -6,19 +6,43 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      keys: ["Q", "W", "E", "A", "S", "D"],
-      sounds: []
+      keys: ["Q",]
     }
-
   }
-
   keyPress(event) {
-    console.log(event.key)
-    let audio1 = document.getElementById("keyq");
-    if (event.key === "q" || event.key === "Q") {
-      audio1.play();
+    switch (event.key) {
+      case ("q" || "Q"):
+        return document.getElementById("keyq").play()
+        break;
+      case ("w" || "W"):
+        return document.getElementById("keyw").play()
+        break;
+      case ("e" || "E"):
+        return document.getElementById("keye").play()
+        break;
+      case ("a" || "A"):
+        return document.getElementById("keya").play()
+        break;
+      case ("s" || "S"):
+        return document.getElementById("keys").play()
+        break;
+      case ("d" || "D"):
+        return document.getElementById("keyd").play()
+        break;
+      case ("z" || "Z"):
+        return document.getElementById("keyz").play()
+        break;
+      case ("x" || "X"):
+        return document.getElementById("keyx").play()
+        break;
+      case ("c" || "C"):
+        return document.getElementById("keyc").play()
+        break;
+      default:
+        return null;
     }
   };
+  
   clickedq() {
     let audio1 = document.getElementById("keyq");
     audio1.play();
@@ -60,7 +84,7 @@ class App extends Component {
 
     return (
       <div id="drum-machine" onKeyPress={this.keyPress}>
-      <AudioFiles />
+        <AudioFiles />
         <div id="drums">
           <button className="drum-pad" id="Q" onClick={this.clickedq}>Q</button>
           <button className="drum-pad" id="W" onClick={this.clickedw}>W</button>
