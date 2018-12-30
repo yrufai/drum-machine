@@ -10,39 +10,27 @@ class App extends Component {
     }
   }
   keyPress(event) {
-    switch (event.key) {
-      case ("q" || "Q"):
-        return document.getElementById("keyq").play()
-        break;
-      case ("w" || "W"):
-        return document.getElementById("keyw").play()
-        break;
-      case ("e" || "E"):
-        return document.getElementById("keye").play()
-        break;
-      case ("a" || "A"):
-        return document.getElementById("keya").play()
-        break;
-      case ("s" || "S"):
-        return document.getElementById("keys").play()
-        break;
-      case ("d" || "D"):
-        return document.getElementById("keyd").play()
-        break;
-      case ("z" || "Z"):
-        return document.getElementById("keyz").play()
-        break;
-      case ("x" || "X"):
-        return document.getElementById("keyx").play()
-        break;
-      case ("c" || "C"):
-        return document.getElementById("keyc").play()
-        break;
-      default:
-        return null;
-    }
+    if (event.key === "q" || event.key === "Q") {
+      return document.getElementById("keyq").play()
+    } else if (event.key === "w" || event.key === "W") {
+      return document.getElementById("keyw").play()
+    } else if (event.key === "e" || event.key === "E") {
+      return document.getElementById("keye").play()
+    } else if (event.key === "a" || event.key === "A") {
+      return document.getElementById("keya").play()
+    } else if (event.key === "s" || event.key === "S") {
+      return document.getElementById("keys").play()
+    } else if (event.key === "d" || event.key === "D") {
+      return document.getElementById("keyd").play()
+    } else if (event.key === "z" || event.key === "Z") {
+      return document.getElementById("keyz").play()
+    } else if (event.key === "x" || event.key === "X") {
+      return document.getElementById("keyx").play()
+    } else if (event.key === "c" || event.key === "C") {
+      return document.getElementById("keyc").play()
+    } else return null;
   };
-  
+
   clickedq() {
     let audio1 = document.getElementById("keyq");
     audio1.play();
