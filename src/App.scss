@@ -18,7 +18,7 @@ body{
     float: left;
     margin: 1rem;
     .drum-pad{
-      background: #808080;
+      background: #b4dde7;
       display:inline-block;
       margin:0.3rem;
       border-radius: 0.5rem;
@@ -30,9 +30,20 @@ body{
       outline: none;
     }
     button:active{
-      background: #eede84f8;
+      background: #e7c88ef8;
       margin: 3px;
       border: 0px;
+    }
+    .active{
+      //transition: background-color 200ms ease-in-out;  
+      animation-name: keypress;
+      animation-duration: 290ms;
+      //animation-delay: 200ms;
+      animation-iteration-count: 1;
+      @keyframes keypress {
+        100%{ background: #65c4f0}
+      }
+
     }
   }
   #display{

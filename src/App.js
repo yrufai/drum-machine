@@ -8,7 +8,7 @@ class App extends Component {
   keyPress(event) {
     let upCase = event.key.toUpperCase()
     let getId = document.getElementById(upCase);
-    $(getId).css("background-active", "blue");
+    $(getId).toggleClass("active");
 
     if (event.key === "q" || event.key === "Q") {
       return document.getElementById("keyq").play()
