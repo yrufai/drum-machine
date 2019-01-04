@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import AudioFiles from "./AudioFiles";
 import $ from "jquery";
-import "./firebase/firebase";
+
 
 class App extends Component {
 
