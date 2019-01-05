@@ -17,41 +17,70 @@ body{
     float: right;
     .upper-drums{
       width: 100%;
-      height: 50%;
+      height: 47%;
       display: block;
       position: relative;
+      margin: auto;
+      .upper-buttons{
+        background: white;
+        width: 18%;
+        height: 70%;
+        margin: 3rem 0.3rem 0rem 0.2rem;
+        border-radius: 1.1rem;
+        outline: none;
+        border: 1px solid #f0e9e9;
+        box-shadow: 0.2rem 0.3rem 0.3rem #363434
+      }
+      .upper-buttons:active{
+        box-shadow: 0rem 0rem 0.1rem #363434
+      }
     }
     .lower-drums{
       width: 100%;
-      height: 50%;
+      height: 47%;
       display: block;
       margin: auto;
+      margin-top: 2.2rem;
       .drum-pad{
-        width: 10%;
-        height: 70%;
+        width: 9.5%;
+        height: 68%;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         border: 0.5px solid black;
-        margin: 0.5px;
+        margin: 0.1px;
         box-shadow: 0.1rem 0.1rem 0.1rem  #0a0a0a;
         outline: none;
-        background: white;
+        background: #F7F7F7;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 5rem
       }
-      button:active{
-        background: #61f5e1;
-        box-shadow: inset 0rem 0rem 0rem  #bed6e2;
-        margin: 0px;
+      .drum-pad:active{
+       // background: #61f5e1;
+        box-shadow: inset 0rem 0rem 0.4rem 0.2rem #cacfd1;
+        margin: 0.1px;
+        //margin-right: 1px;
       }
       .top-buttons{
         position: absolute;
-        background: black;
+        background: #3B3B3B;
         color: white;
         width: 2rem;
         height: 4rem;
-        margin-left: 3.4rem;
-        button:active{
-          margin: 0px;
-        }
+        margin-left:  3.2rem;
+        outline: none;
+        border: 0.2rem solid #201e1e;
+        border-top: 0px;
+        border-bottom-left-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        border-bottom: 0.4rem solid #1e1e1f;
+        box-shadow: 0rem 0rem 0.2rem  #3f3f3f;
+        text-align: center;
+        padding-bottom: 2.2rem
+      }
+      .top-buttons:active{
+        //background: #3A9285;
+        box-shadow: inset 0.2rem 0.5rem 0.3rem  #0e0c0c;
       }
     }
   }

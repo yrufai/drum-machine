@@ -72,37 +72,50 @@ class App extends Component {
       <div id="drum-machine" onKeyPress={this.keyPress}>
         <AudioFiles />
         <div id="drums">
-            <div className="upper-drums">
-              <button>press me</button>
-            </div>
-            <div className="lower-drums">
-            <button className="top-buttons">xy</button>
-              <button className="drum-pad" id="Q" onClick={this.clickedq}>
-              Q
+          <div className="upper-drums">
+            <button className="upper-buttons">1</button>
+            <button className="upper-buttons">2</button>
+            <button className="upper-buttons">3</button>
+            <button className="upper-buttons">4</button>
+            <button className="upper-buttons">5</button>
+          </div>
+          <div className="lower-drums">
+            <button className="top-buttons">w</button>
+            <button className="drum-pad" id="A" onClick={this.clickedq}>
+              a
             </button>
-              <button className="drum-pad" id="W" onClick={this.clickedw}>
-              W
+            <button className="top-buttons">e</button>
+            <button className="drum-pad" id="S" onClick={this.clickedw}>
+              s
             </button>
-              <button className="drum-pad" id="E" onClick={this.clickede}>
-              E
+            <button className="drum-pad" id="D" onClick={this.clickede}>
+              d
             </button>
-              <button className="drum-pad" id="A" onClick={this.clickeda}>
-              A
+            <button className="top-buttons">t</button>
+            <button className="drum-pad" id="F" onClick={this.clickeda}>
+              f
             </button>
-              <button className="drum-pad" id="S" onClick={this.clickeds}>
-              S
+            <button className="top-buttons">y</button>
+            <button className="drum-pad" id="G" onClick={this.clickeds}>
+              g
             </button>
-              <button className="drum-pad" id="D" onClick={this.clickedd}>
-              D
+            <button className="top-buttons">u</button>
+            <button className="drum-pad" id="H" onClick={this.clickedd}>
+              h
             </button>
-              <button className="drum-pad" id="Z" onClick={this.clickedz}>
-              Z
+            <button className="drum-pad" id="J" onClick={this.clickedz}>
+              j
             </button>
-              <button className="drum-pad" id="X" onClick={this.clickedx}>
-              X
+            <button className="top-buttons">o</button>
+            <button className="drum-pad" id="K" onClick={this.clickedx}>
+              k
             </button>
-              <button className="drum-pad" id="C" onClick={this.clickedc}>
-              C
+            <button className="top-buttons">p</button>
+            <button className="drum-pad" id="L" onClick={this.clickedc}>
+              l
+            </button>
+            <button className="drum-pad" id=";" onClick={this.clickedc}>
+              ;
             </button>
           </div>
         </div>
