@@ -120,7 +120,8 @@ class App extends Component {
           </div>
         </div>
         <div id="display">
-          <button>click me</button>
+        <input type="text-area"></input>
+        <input type="range"></input>
         </div>
       </div>
     );
