@@ -1,56 +1,66 @@
 body{
-  background: #8D8D8D;
+  background: #3D84A8;
 }
 #drum-machine{
-  width: 45rem;
-  height: 21rem;
-  border: #eede84f8 solid 0.4rem;
+  width: 62rem;
+  height: 25rem;
+  border: #080807f8 solid 0.8px;
   position: relative;
   margin: auto;
-  margin-top: 14rem;
-  background: #B3B3B3;
+  margin-top: 11rem;
+  background: #3A9285;
+  border-radius: 2rem;
   #drums{
-    width: 55%;
-    height:85%;
-    display: grid;  
-    grid-template-columns:repeat(3,30.5%);
+    width: 70%;
+    height:100%;  
     position: relative;
-    float: left;
-    margin: 1rem;
-    .drum-pad{
-      background: #cec7ce;
-      display:inline-block;
-      margin:0.3rem;
-      border-radius: 0.5rem;
-      box-shadow: 0.2rem 0.2rem 0.1rem 0.1rem #0a0a0a;
-      text-align: center;
-      padding: 2rem;
-      font-weight: bold;
-      border: 0px;
-      outline: none;
+    float: right;
+    .upper-drums{
+      width: 100%;
+      height: 50%;
+      display: block;
+      position: relative;
     }
-    button:active{
-      background: #e7c88ef8;
-      margin: 3px;
-      border: 0px;
-    }
-    .active{
-      //transition: background-color 200ms ease-in-out;  
-      animation-name: keypress;
-      animation-duration: 290ms;
-      //animation-delay: 200ms;
-      animation-iteration-count: 1;
-      @keyframes keypress {
-        100%{ background: #65c4f0}
+    .lower-drums{
+      width: 100%;
+      height: 50%;
+      display: block;
+      margin: auto;
+      .drum-pad{
+        width: 10%;
+        height: 70%;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border: 0.5px solid black;
+        margin: 0.5px;
+        box-shadow: 0.1rem 0.1rem 0.1rem  #0a0a0a;
+        outline: none;
+        background: white;
       }
-
+      button:active{
+        background: #61f5e1;
+        box-shadow: inset 0rem 0rem 0rem  #bed6e2;
+        margin: 0px;
+      }
+      .top-buttons{
+        position: absolute;
+        background: black;
+        color: white;
+        width: 2rem;
+        height: 4rem;
+        margin-left: 3.4rem;
+        button:active{
+          margin: 0px;
+        }
+      }
     }
   }
   #display{
-    float: right;
-    width: 40%;
+    float: left;
+    width: 30%;
     height: 100%;
-    background: #B3B3B3;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
   
 }
