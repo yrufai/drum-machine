@@ -11,16 +11,16 @@ import soundFile9 from "./audio/cymbal8.mp3";
 
 function AudioFiles(props) {
     return (
-        <div>
-            <audio id="keyw"><source src={soundFile2} type="audio/mpeg" ></source></audio>
-            <audio id="keyq"><source src={soundFile1} type="audio/mpeg" ></source></audio>
-            <audio id="keye"><source src={soundFile3} type="audio/mpeg" ></source></audio>
-            <audio id="keya"><source src={soundFile4} type="audio/mpeg" ></source></audio>
-            <audio id="keys"><source src={soundFile5} type="audio/mpeg" ></source></audio>
-            <audio id="keyd"><source src={soundFile6} type="audio/mpeg" ></source></audio>
-            <audio id="keyz"><source src={soundFile7} type="audio/mpeg" ></source></audio>
-            <audio id="keyx"><source src={soundFile8} type="audio/mpeg" ></source></audio>
-            <audio id="keyc"><source src={soundFile9} type="audio/mpeg" ></source></audio>
+        <div >
+            <audio className="audio" id="keyw"><source src={soundFile2} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keyq"><source src={soundFile1} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keye"><source src={soundFile3} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keya"><source src={soundFile4} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keys"><source src={soundFile5} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keyd"><source src={soundFile6} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keyz"><source src={soundFile7} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keyx"><source src={soundFile8} type="audio/mpeg" ></source></audio>
+            <audio className="audio" id="keyc"><source src={soundFile9} type="audio/mpeg" ></source></audio>
         </div>
     );
 }

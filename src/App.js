@@ -4,6 +4,8 @@ import AudioFiles from "./AudioFiles";
 import $ from "jquery";
 
 class App extends Component {
+
+
   keyPress(event) {
     let upCase = event.key.toUpperCase();
     let getId = document.getElementById(upCase);
@@ -121,7 +123,12 @@ class App extends Component {
         </div>
         <div id="display">
         <input type="text-area"></input>
-        <input type="range"></input>
+        <input type="range" id="range" min={0} max={100} step={1} onChange={()=>{
+          const vlume = document.getElementById("range").value;
+          document.querySelectorAll("audio").forEach((a)=>{
+            a.volume = 0.01 * vlume;
+          })
+        }}></input>
         </div>
       </div>
     );
