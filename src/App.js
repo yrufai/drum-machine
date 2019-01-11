@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="drum-machine">
-        <div id="displays"></div>
+        <div id="display"></div>
         <div id="drums">
             <Drums   />
         </div>
