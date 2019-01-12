@@ -24,7 +24,7 @@ class Piano extends React.Component{
     }
     render(){
         return(
-            <div className={this.props.klass}>
+            <div onClick={this.handleClick} className={this.props.klass}>
                 <audio id={this.props.keyPress}>
                     <source src={this.props.url} type="audio/mpeg" />
                 </audio>

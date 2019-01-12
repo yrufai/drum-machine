@@ -40,16 +40,18 @@ body {
       }
     }
     .lower-drums {
+      position: relative;
       width: 100%;
       height: 47%;
       display: block;
       margin: auto;
       margin-top: 3%;
+      display: inline-block;
       .white {
         display: inline-block;
         position: relative;
         width: 9.5%;
-        height: 58%;
+        height: 25%;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         border: 0.5px solid black;
@@ -82,7 +84,9 @@ body {
         border-bottom: 0.4rem solid #1e1e1f;
         box-shadow: 0rem 0rem 0.2rem #3f3f3f;
         text-align: center;
-        padding-bottom: 2.2rem;
+        padding-bottom: 2.1rem;
+        z-index: 10;
+        top: 1rem;
       }
       .black:active {
         //background: #3A9285;
