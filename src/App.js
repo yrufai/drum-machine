@@ -1,5 +1,6 @@
 import React from "react";
 import Drums from "./drums";
+import Pianos from "./pianos"
 import "./App.scss";
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
         <div id="display"></div>
         <div id="drums">
             <Drums   />
+            <Pianos />
         </div>
       </div>
     );

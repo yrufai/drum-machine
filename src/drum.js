@@ -16,14 +16,14 @@ class Drum extends React.Component {
     audio.play();
   }
   handlekeyPress(e) {
-      console.log(e.keyCode)
+       
     if (e.keyCode === this.props.keyCode) {
       this.handleClick();
     }
   }
   render() {
     return (
-      <div onClick={this.handleClick} className="upper-buttons" >
+      <div onClick={this.handleClick} className="upper-buttons" >{this.props.keyPress}
         <audio  id={this.props.keyPress} >
           <source src={this.props.url} type="audio/mpeg" />
         </audio>

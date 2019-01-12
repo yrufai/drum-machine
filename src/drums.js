@@ -39,7 +39,7 @@ import Drum from "./drum";
         return (
             <div className="upper-drums">
               {myDrums.map(a=>(
-                  <Drum url={a.url} key={a.keyPress} keyPress={a.keyPress} keyCode={a.keyCode} id={a.id} />
+                  <Drum url={a.url} key={a.keyPress} keyPress={a.keyPress} keyCode={a.keyCode} id={a.id} /> 
               ))}
             </div>
           );
