@@ -6,7 +6,7 @@ class Piano extends React.Component{
         this.handleClick = this.handleClick.bind(this);
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
-
+    
     componentDidMount(){
         document.addEventListener("keydown", this.handleKeyPress)
     }
@@ -25,6 +25,7 @@ class Piano extends React.Component{
     render(){
         return(
             <div onClick={this.handleClick} className={this.props.klass}>
+            {this.props.keyPress}
                 <audio id={this.props.keyPress}>
                     <source src={this.props.url} type="audio/mpeg" />
                 </audio>
@@ -32,5 +33,4 @@ class Piano extends React.Component{
         )
     }
 }
-
 export default Piano;

@@ -11,7 +11,7 @@ class App extends React.Component {
         <div id="display"></div>
         <div id="drums">
             <Drums   />
-            <Pianos />
+            <Pianos  />
         </div>
       </div>
     );
