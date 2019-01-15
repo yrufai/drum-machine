@@ -10,8 +10,8 @@ class App extends React.Component {
       <div id="drum-machine">
         <div id="display"></div>
         <div id="drums">
-            <Drums   />
-            <Pianos  />
+            <Drums  />
+            <Pianos />
         </div>
       </div>
     );

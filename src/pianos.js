@@ -109,7 +109,7 @@ const pianoNotes = [
   class Pianos extends React.Component{
       render(){
           return(
-              <div>
+              <div className="lower-drums">
               {pianoNotes.map(a=>(
                   <Piano clipId={a.id} key={a.id} keyCode={a.keyCode} url={a.url} keyPress={a.keyPress} klass={a.class} />
               )) }
