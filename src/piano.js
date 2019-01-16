@@ -15,6 +15,7 @@ class Piano extends React.Component{
         const audio = document.getElementById(this.props.keyPress);
         audio.currentTime = 0;
         audio.play();
+        this.props.note(this.props.clipId)
     }
 
     handleKeyPress(a){
@@ -26,7 +27,7 @@ class Piano extends React.Component{
         return(
             <div onClick={this.handleClick} className={this.props.klass}>
             {this.props.keyPress}
-                <audio id={this.props.keyPress}>
+                <audio className="sound" id={this.props.keyPress}>
                     <source src={this.props.url} type="audio/mpeg" />
                 </audio>
             </div>

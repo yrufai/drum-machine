@@ -14,6 +14,7 @@ class Drum extends React.Component {
     const audio = document.getElementById(this.props.keyPress);
     audio.currentTime = 0;
     audio.play();
+    this.props.note(this.props.id);
   }
   handlekeyPress(e) {
        
@@ -24,7 +25,7 @@ class Drum extends React.Component {
   render() {
     return (
       <div onClick={this.handleClick} className="upper-buttons" >{this.props.keyPress}
-        <audio  id={this.props.keyPress} >
+        <audio className="sound" id={this.props.keyPress} >
           <source src={this.props.url} type="audio/mpeg" />
         </audio>
       </div>

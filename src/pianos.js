@@ -111,7 +111,7 @@ const pianoNotes = [
           return(
               <div className="lower-drums">
               {pianoNotes.map(a=>(
-                  <Piano clipId={a.id} key={a.id} keyCode={a.keyCode} url={a.url} keyPress={a.keyPress} klass={a.class} />
+                  <Piano note={this.props.note} clipId={a.id} key={a.id} keyCode={a.keyCode} url={a.url} keyPress={a.keyPress} klass={a.class} />
               )) }
               </div>
           )
