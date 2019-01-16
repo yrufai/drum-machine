@@ -45,7 +45,7 @@ class App extends React.Component {
             <Pianos note={this.noteHandler} />
           </div>
         </div>
-        <div id="name"><a href="https://github.com/yrufai" >YAKUBU AHMED EL-RUFAI</a></div>
+        <div id="name"><a href="https://github.com/yrufai">YAKUBU AHMED EL-RUFAI</a></div>
         </div>
     );
   }
