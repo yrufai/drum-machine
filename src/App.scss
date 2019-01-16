@@ -1,5 +1,16 @@
 body {
   background: #3d84a8;
+ #name{
+  width: 20rem;
+  height: px;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: 'Leckerli One', cursive;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+ }
 }
 #drum-machine {
   width: 62rem;
