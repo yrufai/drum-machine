@@ -173,10 +173,13 @@ body {
 }
 
 @media (max-width: 765px) {
+  body{
+    touch-action: none;
+  }
   #drum-machine {
     width: 370px;
     display: block;
-    height: 500px;
+    height: 480px;
     margin: auto;
     margin-top: 5rem;
     overflow: hidden;
