@@ -175,10 +175,12 @@ body {
 
 @media (max-width: 765px) {
   #drum-machine {
-    width: 420px;
+    width: 370px;
     display: block;
     height: 500px;
+    margin: auto;
     margin-top: 5rem;
+    overflow: hidden;
     #display {
       height: 25%;
       width: 80%;
@@ -196,7 +198,7 @@ body {
         justify-content: center;
         align-items: center;
         font-weight: bold;
-        margin: 5% 0 0 2.5rem;
+        margin: 4rem 0 0 2.5rem;
       }
       .volume {
         margin: 0rem 0rem 0rem 2.3rem;
@@ -235,37 +237,37 @@ body {
         margin: 2rem 0rem 0 1rem;
         .w {
           display: inline-block;
-          left: 1.6rem;
+          left: 1.4rem;
           z-index: 1;
         }
         .e {
           display: inline-block;
-          left: 4rem;
+          left: 3.7rem;
           z-index: 1;
         }
         .t {
           display: inline-block;
-          left: 8.9rem;
+          left: 7.9rem;
           z-index: 1;
         }
         .y {
           display: inline-block;
-          left: 11.4rem;
+          left: 10rem;
           z-index: 1;
         }
         .u {
           display: inline-block;
-          left: 13.8rem;
+          left: 12.3rem;
           z-index: 1;
         }
         .o {
           display: inline-block;
-          left: 18.7rem;
+          left: 16.5rem;
           z-index: 1;
         }
         .p {
           display: inline-block;
-          left: 21rem;
+          left: 18.7rem;
           z-index: 1;
         }
       }
