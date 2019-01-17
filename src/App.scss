@@ -27,7 +27,6 @@ body {
     position: relative;
     display: block;
     float: right;
-
     .upper-drums {
       width: 95%;
       height: 50%;
@@ -227,6 +226,10 @@ body {
           margin: 0px;
           height: 5rem;
           width: 18%;
+          box-shadow: none;
+          &:active{
+            background: #9aebdf;
+          }
         }
       }
       .lower-drums {
@@ -235,6 +238,9 @@ body {
         height: 40%;
         display: block;
         margin: 2rem 0rem 0 1rem;
+        .white{
+          box-shadow: 0.5px 0.5px 0.5px #363434;
+        }
         .w {
           display: inline-block;
           left: 1.4rem;
