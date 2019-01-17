@@ -1,10 +1,8 @@
 body {
   background: #3d84a8;
-  width: 100vh;
-  height: 100vh;
+
   #name {
-    width: 20rem;
-    height: px;
+    width: 100%;
     margin: 1rem auto;
     text-align: center;
     font-family: "Leckerli One", cursive;
@@ -165,52 +163,111 @@ body {
       align-items: center;
       font-weight: bold;
     }
-    input[type="range"] {
+    .volume {
       margin: 3rem 0rem 0rem 1rem;
-      border-radius: 4rem;
-      width: 80%;
-      height: 3rem;
       outline: none;
+      input[type="range"]{
+        width: 80%;
+      }
     }
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 765px) {
   #drum-machine {
-    width: 800px;
+    width: 420px;
     display: block;
-    height: 1000px;
+    height: 500px;
+    margin-top: 5rem;
     #display {
-      width: 60%;
-      height: 20%;
+      height: 25%;
+      width: 80%;
       display: block;
       margin: auto;
       float: none;
-      margin-top: 8rem;
+      align-items: center;
+      .stateBar {
+        width: 80%;
+        height: 30%;
+        background: white;
+        color: black;
+        border-radius: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 5% 0 0 2.5rem;
+      }
+      .volume {
+        margin: 0rem 0rem 0rem 2.3rem;
+        width: 100%;
+        outline: none;
+        input[type="range"] {
+          margin: 2rem 0 0 4%;
+          width: 70%;
+        }
+      }
     }
     #drums {
       width: 100%;
       height: 75%;
       position: relative;
       display: block;
-      margin: 2rem;
+      margin: 0rem;
       float: none;
       .upper-drums {
         width: 100%;
         height: 25%;
         display: block;
         position: relative;
-        margin: 5rem 0 0 0;
-        .upper-buttons{
+        margin: 5rem 0 0 0.9rem;
+        .upper-buttons {
           margin: 0px;
+          height: 5rem;
+          width: 18%;
         }
       }
       .lower-drums {
         position: relative;
         width: 95%;
-        height: 55%;
+        height: 40%;
         display: block;
-        margin: 3rem 2rem 0 0;
+        margin: 2rem 0rem 0 1rem;
+        .w {
+          display: inline-block;
+          left: 1.6rem;
+          z-index: 1;
+        }
+        .e {
+          display: inline-block;
+          left: 4rem;
+          z-index: 1;
+        }
+        .t {
+          display: inline-block;
+          left: 8.9rem;
+          z-index: 1;
+        }
+        .y {
+          display: inline-block;
+          left: 11.4rem;
+          z-index: 1;
+        }
+        .u {
+          display: inline-block;
+          left: 13.8rem;
+          z-index: 1;
+        }
+        .o {
+          display: inline-block;
+          left: 18.7rem;
+          z-index: 1;
+        }
+        .p {
+          display: inline-block;
+          left: 21rem;
+          z-index: 1;
+        }
       }
     }
   }
